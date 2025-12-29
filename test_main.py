@@ -1,3 +1,4 @@
+# test_main.py
 import unittest
 from main import (
     Database,
@@ -54,10 +55,10 @@ class TestProcedures(unittest.TestCase):
         one_to_many = build_one_to_many(self.databases, self.procedures)
         result = query_b1(one_to_many)
         
-
         names = [item[0] for item in result]
         self.assertEqual(names, sorted(names))
         
+        # Проверяем, что все элементы на месте
         self.assertEqual(len(result), 6)
 
     def test_query_b3_filter_by_proc_suffix(self):

@@ -1,4 +1,3 @@
-# main.py
 class Procedure:
     def __init__(self, id, name, size, database_id):
         self.id = id
@@ -66,6 +65,7 @@ def query_b3(many_to_many):
 
 
 def main():
+    # --- Тестовые данные ---
     databases = [
         Database(1, "HR_DB"),
         Database(2, "Finance_DB"),
