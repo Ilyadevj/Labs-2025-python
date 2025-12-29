@@ -36,7 +36,7 @@ async def cancel(update: Update, context):
     return ConversationHandler.END
 
 def main():
-    TOKEN = "ВАШ_ТОКЕН_БОТА"
+    TOKEN = "8530282914:AAGL_N6PdjHhDUvsAlhDh9HMMrUxUfwPawc"
     
     app = Application.builder().token(TOKEN).build()
     
